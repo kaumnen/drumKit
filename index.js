@@ -3,6 +3,7 @@ buttons.forEach(element => element.addEventListener("click", function(){
 
     let buttonInnerHTML = this.innerHTML;
     makeSound(buttonInnerHTML);
+    buttonAnimation(buttonInnerHTML);
 }));
 
 
@@ -10,7 +11,7 @@ buttons.forEach(element => element.addEventListener("click", function(){
 document.addEventListener("keydown", function(event){
     
     makeSound(event.key);
-
+    buttonAnimation(event.key);
 });
 
 function makeSound(key){
