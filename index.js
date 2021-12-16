@@ -2,7 +2,7 @@
 //     alert("I got clicked!");
 // });
 
-const buttons = document.querySelectorAll("button");
+const buttons = document.querySelectorAll(".drum");
 buttons.forEach(element => element.addEventListener("click", function(){
     alert("I got clicked!");
 }))
