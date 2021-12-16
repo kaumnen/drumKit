@@ -1,10 +1,8 @@
 const buttons = document.querySelectorAll(".drum");
 buttons.forEach(element => element.addEventListener("click", function(){
-    
+
     let buttonInnerHTML = this.innerHTML;
-
     makeSound(buttonInnerHTML);
-
 }));
 
 
