@@ -1,6 +1,8 @@
-document.querySelector("button").addEventListener("click", handleClick);
+// document.querySelectorAll("button").addEventListeners("click", function() {
+//     alert("I got clicked!");
+// });
 
-function handleClick()
-{
+const buttons = document.querySelectorAll("button");
+buttons.forEach(element => element.addEventListener("click", function(){
     alert("I got clicked!");
-}
+}))
